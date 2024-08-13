@@ -100,6 +100,9 @@ button {
     }
 }
 
-.transition-width {
-    transition: width 0.3s ease-in-out;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .animate-scroll {
+        animation-duration: 10s; /* Faster scrolling on mobile */
+    }
 }
