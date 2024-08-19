@@ -28,8 +28,7 @@
             <!-- Menu Items (hidden on mobile) -->
             <div class="menu-items space-x-4 hidden lg:flex items-center">
                 <button
-    data-tf-popup="01J5E47TFENZWFZ17NRF4DH8TB"
-    class="text-gray-700 border border-gray-300 py-2 px-4 rounded-lg hover:text-gray-900 hover:border-gray-400 flex items-center"
+    class="request-demo-btn text-gray-700 border border-gray-300 py-2 px-4 rounded-lg hover:text-gray-900 hover:border-gray-400 flex items-center"
 >
     <i class="bi bi-play-circle mr-2"></i> Request a Demo
 </button>
@@ -320,7 +319,19 @@
 
 <script src="//embed.typeform.com/next/embed.js"></script>
 
-
+<script>
+    // Select all buttons with the same class and add event listeners
+    document.querySelectorAll('.request-demo-btn').forEach(function(button) {
+        button.addEventListener('click', function() {
+            window.tf.createPopup('https://jvoc0n41054.typeform.com/to/P7MvApYI', {
+                mode: 'popup',
+                autoClose: 3,
+                hideHeaders: true,
+                hideFooters: true
+            }).open();
+        });
+    });
+</script>
 
 
 
