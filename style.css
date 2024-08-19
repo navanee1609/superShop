@@ -46,6 +46,9 @@
 .menu-items {
     display: none;
 }
+p{
+    color: #475467;
+}
 
 /* border bottom */
 /* Custom styles for the brand section */
